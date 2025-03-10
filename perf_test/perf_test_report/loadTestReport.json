@@ -1,6 +1,6 @@
 {
-    "date": "2025-03-07",
-    "time": "01:57:46",
+    "date": "2025-03-10",
+    "time": "01:12:12",
     "load_samples": [
         "65_samples",
         "120k_samples",
@@ -13,31 +13,31 @@
     "results": {
         "65_samples": {
             "train": {
-                "time_taken_minutes": 1.07,
+                "time_taken_minutes": 1.05,
                 "status": "success"
             },
             "match": {
-                "time_taken_minutes": 0.51,
+                "time_taken_minutes": 0.52,
                 "status": "success"
             }
         },
         "120k_samples": {
             "train": {
-                "time_taken_minutes": 1.55,
+                "time_taken_minutes": 1.57,
                 "status": "success"
             },
             "match": {
-                "time_taken_minutes": 5.35,
+                "time_taken_minutes": 5.52,
                 "status": "success"
             }
         },
         "5m_samples": {
             "train": {
-                "time_taken_minutes": 2.01,
+                "time_taken_minutes": 2.03,
                 "status": "success"
             },
             "match": {
-                "time_taken_minutes": 56.27,
+                "time_taken_minutes": 54.49,
                 "status": "success"
             }
         }
