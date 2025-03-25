@@ -15,8 +15,9 @@ import zingg.common.core.block.IBlocker;
 import zingg.common.core.block.InputDataGetter;
 import zingg.common.core.executor.ZinggBase;
 import zingg.common.core.match.data.IDataGetter;
+import zingg.common.core.preprocess.IPreprocessors;
 
-public abstract class VerifyBlocking<S,D,R,C,T> extends ZinggBase<S,D,R,C,T>{
+public abstract class VerifyBlocking<S,D,R,C,T> extends ZinggBase<S,D,R,C,T> implements IPreprocessors<S,D,R,C,T> {
 
 	private static final long serialVersionUID = 1L;
 	protected static String name = "zingg.common.core.executor.blockingverifier.VerifyBlocking";
@@ -35,9 +36,10 @@ public abstract class VerifyBlocking<S,D,R,C,T> extends ZinggBase<S,D,R,C,T>{
     public void execute() throws ZinggClientException {
         try {
 			setTimestamp(timestamp);
-			ZFrame<D,R,C>  testDataOriginal = getTestData();
-			testDataOriginal =  getFieldDefColumnsDS(testDataOriginal).cache();
-			ZFrame<D,R,C> blocked = getBlockedData(testDataOriginal);
+			ZFrame<D,R,C> testDataOriginal = getTestData();
+			ZFrame<D,R,C> dataPreProcessed = preprocess(testDataOriginal);
+			dataPreProcessed =  getFieldDefColumnsDS(dataPreProcessed).cache();
+			ZFrame<D,R,C> blocked = getBlockedData(dataPreProcessed);
 			
 			//get the no of counts per hash
 			ZFrame<D,R,C> blockCounts = getBlockCounts(blocked);	

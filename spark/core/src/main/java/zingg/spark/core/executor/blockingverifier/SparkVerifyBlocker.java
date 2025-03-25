@@ -15,8 +15,9 @@ import zingg.common.client.options.ZinggOptions;
 import zingg.common.core.executor.blockingverifier.IVerifyBlockingPipes;
 import zingg.common.core.executor.blockingverifier.VerifyBlocking;
 import zingg.spark.core.context.ZinggSparkContext;
+import zingg.spark.core.preprocess.ISparkPreprocMapSupplier;
 
-public class SparkVerifyBlocker extends VerifyBlocking<SparkSession,Dataset<Row>,Row,Column,DataType> {
+public class SparkVerifyBlocker extends VerifyBlocking<SparkSession,Dataset<Row>,Row,Column,DataType> implements ISparkPreprocMapSupplier {
 
     private static final long serialVersionUID = 1L;
 	public static String name = SparkVerifyBlocker.class.getName();
