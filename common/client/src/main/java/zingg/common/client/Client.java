@@ -154,7 +154,7 @@ public abstract class Client<S,D,R,C,T> implements Serializable {
 		LOG.info("*                                                                        *");
 		LOG.info("*                          https://www.zingg.ai/                         *");
 		LOG.info("*                                                                        *");
-		LOG.info("*                        using: Zingg v"+getProductVersion()+"                    *");
+		LOG.info("*                        using: Zingg v"+getProductVersion()+"                             *");
 		LOG.info("*                                                                        *");
 		if(collectMetrics) {
 			LOG.info("*            ** Note about analytics collection by Zingg AI **           *");
@@ -331,7 +331,7 @@ public abstract class Client<S,D,R,C,T> implements Serializable {
 	}
 
 	public String getProductVersion(){
-		return "0.4.1-SNAPSHOT";
+		return "0.5.0";
 	}
 
 	public Long getMarkedRecordsStat(ZFrame<D,R,C>  markedRecords, long value) {

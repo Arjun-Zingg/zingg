@@ -1,8 +1,7 @@
-[![Java CI](https://github.com/zinggAI/zingg/actions/workflows/build.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/build.yml)
+[![Java CI/CD](https://github.com/zinggAI/zingg/actions/workflows/build.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/build.yml)
 [![pages-build-deployment](https://github.com/zinggAI/zingg/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/pages/pages-build-deployment)
 [![CodeQL](https://github.com/zinggAI/zingg/actions/workflows/codeql.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/codeql.yml)
 [![PMD](https://github.com/zinggAI/zingg/actions/workflows/pmd.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/pmd.yml)
-[![Junits](https://github.com/zinggAI/zingg/actions/workflows/junits.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/junits.yml)
 [![performance-test-febrl120K](https://github.com/zinggAI/zingg/actions/workflows/perfTest-febrl120K.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/perfTest-febrl120K.yml)
 [![performance-test-ncVoters5M](https://github.com/zinggAI/zingg/actions/workflows/perfTest-ncVoters5M.yml/badge.svg)](https://github.com/zinggAI/zingg/actions/workflows/perfTest-ncVoters5M.yml)
 
@@ -31,7 +30,7 @@ Zingg is an ML based tool for entity resolution. The following features set Zing
 - Ability to connect to [disparate data sources](https://docs.zingg.ai/zingg/connectors). Local and cloud file systems in any format, enterprise applications and relational, NoSQL and cloud databases and warehouses
 - Ability to scale to large volumes of data. [See why this is important](https://docs.zingg.ai/zingg/zmodels/) and [Zingg performance numbers](https://docs.zingg.ai/zingg/stepbystep/hardwaresizing)
 - [Interactive training data builder](https://docs.zingg.ai/zingg/stepbystep/createtrainingdata/label) using active learning that builds models on frugally small training samples to high accuracy.
-![Shows records and asks user to mark yes, no, cant say on the cli.](/assets/label.gif) 
+![Shows records and asks user to mark yes, no, cant say on the cli.](/assets/labelvertical.gif) 
 - Ability to define domain specific functions to improve matching  
 - Out of the box support for English as well as Chinese, Thai, Japanese, Hindi and other languages
 
